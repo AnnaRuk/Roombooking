@@ -1,12 +1,14 @@
 public class Room {
 
+    private static int roomCaunter=0;
     private int id; /// a room id
     private int number;
     private int capacity; //емкость
     RoomCategory category;
 
     public Room(int number, int capacity, RoomCategory category) {
-        this.id = number;
+        roomCaunter++;
+        this.id = roomCaunter;
         this.number = number;
         this.capacity = capacity;
         this.category = category;
